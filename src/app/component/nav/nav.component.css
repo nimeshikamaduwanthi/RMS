@@ -1,0 +1,43 @@
+.menuItems {
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+li {
+  position: absolute;
+  height: 36px;
+  top: 0px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  color: #737789;
+}
+
+li.home {
+  left: 0%;
+  right: 88.11%;
+}
+
+li.features {
+  left: 25.84%;
+  right: 56.33%;
+}
+
+li.pricing {
+  left: 58.14%;
+  right: 28.17%;
+}
+
+li.blog {
+  left: 89.41%;
+  right: 0%;
+}
+
+li.log-reg {
+  left: 81.32%;
+  right: 10.42%;
+}
