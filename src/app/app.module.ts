@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,14 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
   ],
   exports: [RouterModule],
-  imports: [BrowserModule, NgbModule, RouterModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    NgbModule,
+    RouterModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
