@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+.content-box {
+  position: absolute;
+  width: 754px;
+  height: 509px;
+  left: 343px;
+  top: 120px;
+
+  background: #ffffff;
+  border: 1px solid #353535;
+  border-radius: 50px;
+}
+
+header.header {
+  display: inline-block;
+  position: absolute;
+  height: 30px;
+  left: 30.56%;
+  right: 58.96%;
+  top: 20px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.login-buttn {
+  position: absolute;
+  width: 270px;
+  height: 54px;
+  left: 80px;
+  top: 50px;
+
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  border-radius: 10px;
+}
+
+label {
+  position: absolute;
+  height: 25px;
+  left: 90px;
+  right: 65.83%;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+label.email {
+  top: 200px;
+}
+
+label.pw {
+  top: 300px;
+}
+
+input {
+  position: absolute;
+  width: 560px;
+  height: 39px;
+  left: 90px;
+
+  border: 1px solid #353535;
+}
+
+input.email {
+  top: 250px;
+}
+
+input.pw {
+  top: 350px;
+}
+
+.register {
+  position: absolute;
+  width: 162.31px;
+  height: 18px;
+  left: 450px;
+  top: 50px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+}
+
+.sub-buttn {
+  position: absolute;
+  width: 560px;
+  height: 54px;
+  left: 90px;
+  top: 430px;
+
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  border-radius: 10px;
+}
