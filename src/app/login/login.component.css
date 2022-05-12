@@ -7,7 +7,7 @@
   width: 754px;
   height: 509px;
   left: 343px;
-  top: 71px;
+  top: 120px;
 
   background: #ffffff;
   border: 1px solid #353535;
@@ -15,11 +15,12 @@
 }
 
 header.header {
+  display: inline-block;
   position: absolute;
   height: 30px;
   left: 30.56%;
   right: 58.96%;
-  top: calc(50% - 30px / 2 - 393px);
+  top: 20px;
 
   font-family: "Quicksand";
   font-style: normal;

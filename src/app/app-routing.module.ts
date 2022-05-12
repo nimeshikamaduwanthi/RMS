@@ -6,6 +6,7 @@ import { FeaturesComponent } from './component/features/features.component';
 import { PricingComponent } from './component/pricing/pricing.component';
 import { BlogComponent } from './component/blog/blog.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'log',
     component: LoginComponent,
+  },
+  {
+    path: 'reg',
+    component: RegisterComponent,
   },
 ];
 

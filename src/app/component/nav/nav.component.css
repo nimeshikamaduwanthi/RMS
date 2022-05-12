@@ -1,43 +1,41 @@
-.menuItems {
-  list-style: none;
-  display: flex;
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  clear: both;
+  overflow: auto;
+}
+
+nav {
   float: right;
 }
 
-li {
-  position: absolute;
-  height: 36px;
-  top: 0px;
+.logo img {
+  float: left;
+  height: 48px;
+  width: 129px;
+  left: 150px;
+  top: 20px;
+  border-radius: 0px;
+  padding: 30px;
+}
 
+ul li {
+  display: inline-block;
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 36px;
   color: #737789;
+  padding: 30px;
 }
 
-li.home {
-  left: 0%;
-  right: 88.11%;
+ul li a {
+  text-decoration: none;
 }
 
-li.features {
-  left: 25.84%;
-  right: 56.33%;
-}
-
-li.pricing {
-  left: 58.14%;
-  right: 28.17%;
-}
-
-li.blog {
-  left: 89.41%;
-  right: 0%;
-}
-
-li.log-reg {
-  left: 81.32%;
-  right: 10.42%;
+ul li:hover {
+  color: orange;
 }
