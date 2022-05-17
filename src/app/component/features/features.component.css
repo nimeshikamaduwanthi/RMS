@@ -309,7 +309,7 @@ p.app-frame {
 .feature-list-img1 {
   position: absolute;
   width: 500px;
-  height: 164px;
+  height: 200px;
   right: 170px;
   bottom: 388px;
   filter: drop-shadow(0px 0px 60px rgba(5, 5, 6, 0.1));
@@ -319,10 +319,10 @@ p.app-frame {
 .feature-list-img2 {
   position: absolute;
   width: 500px;
-  height: 164px;
+  height: 200px;
   right: 170px;
   bottom: 388px;
-  top: 190px;
+  top: 110px;
 
   filter: drop-shadow(0px 0px 60px rgba(5, 5, 6, 0.1));
   border-radius: 4px;
@@ -331,10 +331,10 @@ p.app-frame {
 .feature-list-img3 {
   position: absolute;
   width: 500px;
-  height: 164px;
+  height: 200px;
   right: 170px;
   bottom: 388px;
-  top: 380px;
+  top: 260px;
 
   filter: drop-shadow(0px 0px 60px rgba(5, 5, 6, 0.1));
   border-radius: 4px;
