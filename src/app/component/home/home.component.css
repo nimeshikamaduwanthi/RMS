@@ -756,7 +756,7 @@ input::after {
 .question-img1 {
   position: absolute;
   height: 16.92px;
-  left: calc(50% - 228.95px / 2 + 0.45px);
+  left: 45%;
   top: 40px;
 }
 
@@ -764,7 +764,7 @@ input::after {
   position: absolute;
   width: 494.34px;
   height: 98.24px;
-  left: calc(50% - 494.34px / 2 - 0.63px);
+  left: 35%;
   top: 70px;
 }
 
@@ -773,5 +773,204 @@ input::after {
   height: 926px;
   left: 3%;
   right: 0%;
-  top: 268px;
+  top: 200px;
+}
+
+.question-background1 {
+  position: absolute;
+  height: 87px;
+  left: 12%;
+  right: 10%;
+  top: 300px;
+  background: #ffffff;
+  border: 1px solid #e8e8ef;
+}
+
+.question-background3-top {
+  top: 620px;
+}
+
+.question-background4-top {
+  top: 720px;
+}
+
+.question-background5-top {
+  top: 820px;
+}
+
+.question-content1 {
+  position: absolute;
+  height: 18.8px;
+  left: 6.46%;
+  right: 44.94%;
+  top: 28px;
+  color: rgba(37, 44, 75, 1);
+}
+
+.question-content1-color {
+  color: #5f60ed;
+}
+
+.question-background2 {
+  position: absolute;
+  height: 194px;
+  left: 12%;
+  right: 10%;
+  top: 400px;
+  background: #ffffff;
+  border: 1px solid #e8e8ef;
+}
+
+.question-content1-p {
+  position: absolute;
+  height: 45px;
+  left: 6.34%;
+  right: 20.07%;
+  top: 100px;
+  font-size: 16px;
+  color: #737789;
+}
+
+.contact-container {
+  position: absolute;
+  height: 854px;
+  left: 0%;
+  right: 0%;
+  top: 6224px;
+}
+
+.contact-now {
+  position: absolute;
+  height: 18px;
+  left: 10%;
+  right: 81.02%;
+  top: 10px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f77454;
+}
+
+.contact-header {
+  position: absolute;
+  height: 111px;
+  left: 10%;
+  right: 25%;
+  top: 30px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 55px;
+  color: #252c4b;
+}
+
+input.name {
+  box-sizing: border-box;
+
+  position: absolute;
+  height: 65px;
+  left: 10%;
+  right: 53%;
+  top: 160px;
+  padding: 10px;
+
+  background: #f6f6fb;
+  border: 1px solid #e4e4ee;
+  border-radius: 4px;
+}
+
+input.email {
+  box-sizing: border-box;
+
+  position: absolute;
+  height: 65px;
+  left: 10%;
+  right: 53%;
+  top: 240px;
+  padding: 10px;
+
+  background: #f6f6fb;
+  border: 1px solid #e4e4ee;
+  border-radius: 4px;
+}
+
+textarea.messege {
+  box-sizing: border-box;
+
+  position: absolute;
+  height: 194px;
+  left: 10%;
+  right: 53%;
+  top: 320px;
+  padding: 10px;
+
+  background: #f6f6fb;
+  border: 1px solid #e4e4ee;
+  border-radius: 4px;
+}
+
+button.submit {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 173px;
+  height: 54px;
+  left: 10%;
+  top: 550px;
+  background: #ffffff;
+  border: 1px solid rgba(95, 96, 237, 1);
+}
+
+.button-submit {
+  position: absolute;
+  width: 121px;
+  height: 18px;
+  left: 20px;
+  top: 15px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-img {
+  position: absolute;
+  height: 513px;
+  left: 54%;
+  right: -6.33%;
+  top: 70px;
+  border-radius: 0px;
+}
+
+.hr-line-top {
+  top: 6950px;
+  border: 0.5px solid rgba(157, 156, 156, 0.2);
+}
+
+.footer-header2 {
+  position: absolute;
+  height: 18px;
+  left: 0.65%;
+  right: 12.34%;
+  top: -3.38px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #252c4b;
 }
