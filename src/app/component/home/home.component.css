@@ -21,6 +21,33 @@ h1.container1 {
   color: #252c4b;
 }
 
+.app-img2 {
+  position: absolute;
+  height: 673px;
+  left: 83.89%;
+  right: 0%;
+  top: 1800px;
+  border-radius: 0px;
+}
+
+.app-img1 {
+  position: absolute;
+  height: 196px;
+  left: 83.26%;
+  right: 3.61%;
+  top: 2200px;
+  border-radius: 0px;
+}
+
+.home-img1 {
+  position: absolute;
+  height: 843px;
+  left: 0%;
+  right: 79.72%;
+  top: 0px;
+  border-radius: 0px;
+}
+
 h1.container2 {
   position: absolute;
   height: 84px;
@@ -952,6 +979,24 @@ button.submit {
   left: 54%;
   right: -6.33%;
   top: 70px;
+  border-radius: 0px;
+}
+
+.contact-img1 {
+  position: absolute;
+  height: 694px;
+  left: 55%;
+  right: 0%;
+  top: -15px;
+  border-radius: 0px;
+}
+
+.contact-img2 {
+  position: absolute;
+  height: 589px;
+  left: 0%;
+  right: 84.79%;
+  top: 48px;
   border-radius: 0px;
 }
 
