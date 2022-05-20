@@ -10,15 +10,10 @@ import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FooterComponent } from './component/footer/footer.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavComponent,
-    LoginComponent,
-    RegisterComponent,
-    FooterComponent,
-  ],
+  declarations: [AppComponent, NavComponent, LoginComponent, RegisterComponent],
   exports: [RouterModule],
   imports: [
     BrowserModule,
@@ -27,6 +22,7 @@ import { FooterComponent } from './component/footer/footer.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxPageScrollCoreModule.forRoot({ duration: 500 }),
   ],
   providers: [],
   bootstrap: [AppComponent],

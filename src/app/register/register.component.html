@@ -5,12 +5,11 @@
     <header class="header">
         Your Account
     </header>
-    <!-- <button class="login-buttn">
-        Login
-    </button> -->
-    <button class="register-buttn">
-        Register
-    </button>
+    <ul>
+        <li class="log-route"><a routerLink="/log">Login</a></li>
+        <button class="register-buttn"><a class="reg-button-text" routerLink="/reg">Register</a></button>
+    </ul>
+
 
     <!-- Login Form -->
     <form [formGroup]="registerForm">
@@ -37,7 +36,7 @@
             <label class="phonenum">Phone Number</label>
             <input control="phoneNumber" class="phonenum" type="" name="phonenum" placeholder="Phone Number" />
         </div>
-        <button class="sub-buttn" type="submit">
+        <button class="sub-buttn sut-text" type="submit">
             Submit
         </button>
     </form>

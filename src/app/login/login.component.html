@@ -5,12 +5,10 @@
     <header class="header">
         Your Account
     </header>
-    <button class="login-buttn">
-        Login
-    </button>
-    <!-- <button class="register">
-        Register
-    </button> -->
+    <ul>
+        <button class="login-buttn"><a class="login-buttn-text" routerLink="/log">Login</a></button>
+        <li class="reg-route"><a routerLink="/reg">Register</a></li>
+    </ul>
 
     <!-- Login Form -->
     <form #loginForm="">
@@ -24,7 +22,7 @@
             <label class="pw">Password</label>
             <input class="pw" type="password" name="password" placeholder="Password" />
         </div>
-        <button class="sub-buttn" type="submit">
+        <button class="sub-buttn sut-text" type="submit">
             Submit
         </button>
     </form>
