@@ -1,3 +1,7 @@
+* {
+  box-sizing: 1440px;
+}
+
 .container {
   position: absolute;
   height: 581px;
@@ -442,10 +446,7 @@ p.app-frame {
 }
 
 .pricing-container {
-  position: absolute;
-  width: 1440px;
-  height: 993px;
-  left: 0px;
+  position: relative;
   top: 3301px;
 }
 
@@ -741,7 +742,7 @@ input:checked + .slider:before {
   height: 736px;
   left: 0%;
   right: 0%;
-  top: 4300px;
+  top: 4400px;
 
   background: #f6f6fb;
   border-radius: 0px;
@@ -817,7 +818,7 @@ input:checked + .slider:before {
   width: 1440px;
   height: 1194px;
   left: 0px;
-  top: 5030px;
+  top: 5130px;
 }
 
 .question-img1 {
@@ -903,7 +904,7 @@ input:checked + .slider:before {
   height: 854px;
   left: 0%;
   right: 0%;
-  top: 6224px;
+  top: 6324px;
 }
 
 .contact-now {

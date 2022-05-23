@@ -1,13 +1,13 @@
 * {
-  box-sizing: border-box;
+  box-sizing: 1440px;
 }
 
 .content-box {
   position: absolute;
   width: 754px;
-  height: 509px;
+  height: 660px;
   left: 343px;
-  top: 120px;
+  top: 70px;
 
   background: #ffffff;
   border: 1px solid #353535;
@@ -34,18 +34,45 @@ header.header {
   width: 270px;
   height: 54px;
   left: 80px;
-  top: 50px;
+  top: 60px;
 
   background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
   border-radius: 10px;
+  border: none;
 }
 
-.login-buttn-text {
+.reg-button-text {
   position: absolute;
   width: 162.31px;
   height: 18px;
   right: 50px;
   top: 15px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #353535;
+}
+
+.register-buttn {
+  position: absolute;
+  width: 270px;
+  height: 54px;
+  left: 400px;
+  top: 60px;
+
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  border-radius: 10px;
+  border: none;
+}
+
+.login-buttn-text {
+  position: absolute;
+  left: 90px;
 
   font-family: "Quicksand";
   font-style: normal;
@@ -149,8 +176,20 @@ input.pw {
 
   background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
   border-radius: 10px;
+  border: none;
 }
 
+.sub-buttn {
+  position: absolute;
+  width: 560px;
+  height: 54px;
+  left: 90px;
+  top: 580px;
+
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  border-radius: 10px;
+  border: none;
+}
 .sut-text {
   font-family: "Quicksand";
   font-style: normal;
@@ -160,4 +199,57 @@ input.pw {
   text-align: center;
 
   color: #353535;
+}
+
+label {
+  position: absolute;
+  height: 25px;
+  left: 90px;
+  right: 65.83%;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+label.name {
+  top: 150px;
+}
+
+label.email {
+  top: 230px;
+}
+
+label.pw {
+  top: 310px;
+}
+
+label.cpw {
+  top: 390px;
+}
+
+label.phonenum {
+  top: 470px;
+}
+
+input.name {
+  top: 180px;
+}
+
+input.email {
+  top: 260px;
+}
+
+input.pw {
+  top: 340px;
+}
+
+input.cpw {
+  top: 420px;
+}
+
+input.phonenum {
+  top: 500px;
 }

@@ -4,17 +4,10 @@ import { FooterComponent } from '../footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from 'src/app/app-routing.module';
-import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    NgbModule,
-    RouterModule,
-    AppRoutingModule,
-    FooterModule,
-  ],
+  imports: [CommonModule, NgbModule, RouterModule, AppRoutingModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeModule {}

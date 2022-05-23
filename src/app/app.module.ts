@@ -11,9 +11,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FooterComponent } from './component/footer/footer.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, LoginComponent, RegisterComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    LoginComponent,
+    RegisterComponent,
+    FooterComponent,
+  ],
   exports: [RouterModule],
   imports: [
     BrowserModule,
@@ -23,8 +31,11 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     FormsModule,
     ReactiveFormsModule,
     NgxPageScrollCoreModule.forRoot({ duration: 500 }),
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
+  entryComponents: [RegisterComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

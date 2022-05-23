@@ -5,25 +5,55 @@
     <header class="header">
         Your Account
     </header>
-    <ul>
-        <button class="login-buttn"><a class="login-buttn-text" routerLink="/log">Login</a></button>
-        <li class="reg-route"><a routerLink="/reg">Register</a></li>
-    </ul>
 
-    <!-- Login Form -->
-    <form #loginForm="">
-        <!-- Email -->
-        <div>
-            <label class="email">Email</label>
-            <input class="email" #email="" type="email" name="email" required placeholder="Email" />
-        </div>
-        <!-- Password -->
-        <div>
-            <label class="pw">Password</label>
-            <input class="pw" type="password" name="password" placeholder="Password" />
-        </div>
-        <button class="sub-buttn sut-text" type="submit">
-            Submit
-        </button>
-    </form>
+    <button class="login-buttn login-buttn-text" (click)="goToLogin()">Login</button>
+    <!-- <li class="reg-route"><a routerLink="/reg">Register</a></li> -->
+    <button class="register-buttn reg-button-text" (click)="goToRegister()">Register</button>
+    <!-- <li class="reg-route"><button (click)="handleOnClick()">Register</button></li> -->
+
+    <div *ngIf="!isHiddenReg">
+        <!-- Login Form -->
+        <form #loginForm="">
+            <div>
+                <label class="email">Email</label>
+                <input class="email" #email="" type="email" name="email" required placeholder="Email" />
+            </div>
+            <div>
+                <label class="pw">Password</label>
+                <input class="pw" type="password" name="password" placeholder="Password" />
+            </div>
+            <button class="sub-buttn sut-text" type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <div *ngIf="isHiddenReg">
+        <form [formGroup]="registerForm">
+            <div>
+                <label class="name">Name</label>
+                <input control="name" class="name" #name="" type="name" name="name" required placeholder="Name" />
+            </div>
+            <div>
+                <label class="email">Email</label>
+                <input control="email" class="email" #email="" type="email" name="email" required placeholder="Email" />
+            </div>
+            <div>
+                <label class="pw">Password</label>
+                <input control="password" class="pw" type="password" name="password" placeholder="Password" />
+            </div>
+            <div>
+                <label class="cpw">Confirm Password</label>
+                <input control="confirm_password" class="cpw" type="password" name="c-password"
+                    placeholder="Confirm Password" />
+            </div>
+            <div>
+                <label class="phonenum">Phone Number</label>
+                <input control="phoneNumber" class="phonenum" type="" name="phonenum" placeholder="Phone Number" />
+            </div>
+            <button class="sub-buttn sut-text" type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
 </div>

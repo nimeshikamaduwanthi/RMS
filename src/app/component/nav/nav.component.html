@@ -4,11 +4,13 @@
     </div>
     <nav>
         <ul>
-            <li><a routerLink="/home">Home</a></li>
+            <li><a routerLink="">Home</a></li>
             <li><a routerLink="/features">Features</a></li>
             <li><a routerLink="/pricing">Pricing</a></li>
             <li><a routerLink="/blog">Blog</a></li>
-            <li><a routerLink="/log">Login / Register</a></li>
+            <li><button class="btn btn-primary" (click)="openDialog()">
+                    Login
+                </button></li>
         </ul>
     </nav>
 </div>
