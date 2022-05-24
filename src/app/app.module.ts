@@ -4,24 +4,18 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavComponent } from './component/nav/nav.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { NavComponent } from './Modules/components/nav/nav.component';
+import { LoginComponent } from './Modules/pages/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { FooterComponent } from './component/footer/footer.component';
+// import { FooterComponent } from './Modules/components/footer/footer.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './Modules/components/shared/footer/footer.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavComponent,
-    LoginComponent,
-    RegisterComponent,
-    FooterComponent,
-  ],
+  declarations: [AppComponent, NavComponent, LoginComponent, FooterComponent],
   exports: [RouterModule],
   imports: [
     BrowserModule,
@@ -35,7 +29,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
   ],
   providers: [],
-  entryComponents: [RegisterComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

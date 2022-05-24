@@ -1,22 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './component/home/home.component';
-import { FeaturesComponent } from './component/features/features.component';
-import { PricingComponent } from './component/pricing/pricing.component';
-import { BlogComponent } from './component/blog/blog.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './Modules/pages/home/home.component';
+// import { FeaturesComponent } from './Modules/pages/features/features.component';
+import { PricingComponent } from './Modules/pages/pricing/pricing.component';
+import { BlogComponent } from './Modules/pages/blog/blog.component';
+import { LoginComponent } from './Modules/pages/login/login.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
   },
-  {
-    path: 'features',
-    component: FeaturesComponent,
-  },
+  // {
+  //   path: 'features',
+  //   component: FeaturesComponent,
+  // },
   {
     path: 'pricing',
     component: PricingComponent,
@@ -28,10 +27,6 @@ const routes: Routes = [
   {
     path: 'log',
     component: LoginComponent,
-  },
-  {
-    path: 'reg',
-    component: RegisterComponent,
   },
 ];
 

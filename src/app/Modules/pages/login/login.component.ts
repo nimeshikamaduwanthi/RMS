@@ -1,23 +1,36 @@
 import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { Validators } from '@angular/forms';
 import { FormGroup, FormControl } from '@angular/forms';
-import { AuthService } from 'src/app/services/auth.service';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css'],
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css'],
 })
-export class RegisterComponent implements OnInit {
+export class LoginComponent implements OnInit {
+  credentials = {
+    email: '',
+    password: '',
+  };
+
+  showAlert = false;
+  alertMsg = 'Please wait! We are loggin you in.';
+  alertColor = 'blue';
+  inSubmission = false;
+  Name;
+  isHiddenReg: boolean = false;
+
   constructor(
-    private auth: AuthService,
-    @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
+    @Inject(MAT_DIALOG_DATA) public data: any,
+    private router: Router
+  ) {
+    this.Name = data.name;
+  }
 
   ngOnInit(): void {}
 
-  inSubmission = false;
   name = new FormControl('', [Validators.required, Validators.minLength(3)]);
   email = new FormControl('', [Validators.email]);
   password = new FormControl('', [
@@ -31,9 +44,27 @@ export class RegisterComponent implements OnInit {
     Validators.maxLength(10),
   ]);
 
-  showAlert = false;
-  alertColor = 'blue';
-  alertMsg = 'Please wait! Your account is being created';
+  async login() {
+    this.showAlert = true;
+    this.alertMsg = 'Please wait! We are loggin you in.';
+    this.alertColor = 'blue';
+    this.inSubmission = true;
+
+    try {
+      this.credentials.email, this.credentials.password;
+    } catch (e) {
+      this.inSubmission = false;
+      this.alertMsg = 'An unexpected error occurred. Please try again later';
+      this.alertColor = 'red';
+
+      console.log(e);
+
+      return;
+    }
+
+    this.alertMsg = 'Success! You are now logged in.';
+    this.alertColor = 'green';
+  }
 
   registerForm = new FormGroup({
     name: this.name,
@@ -56,5 +87,13 @@ export class RegisterComponent implements OnInit {
 
     this.alertMsg = 'your account has been created!';
     this.alertColor = 'green';
+  }
+
+  goToLogin() {
+    this.isHiddenReg = false;
+  }
+
+  goToRegister() {
+    this.isHiddenReg = true;
   }
 }

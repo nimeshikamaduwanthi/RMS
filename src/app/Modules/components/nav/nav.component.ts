@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { LoginComponent } from 'src/app/login/login.component';
+import { LoginComponent } from 'src/app/Modules/pages/login/login.component';
 
 @Component({
   selector: 'app-nav',
@@ -8,14 +8,13 @@ import { LoginComponent } from 'src/app/login/login.component';
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
+  lordPopup: boolean = false;
   constructor(private dialogRef: MatDialog) {}
 
   openDialog() {
-    console.log('hi');
+    this.lordPopup = true;
     this.dialogRef.open(LoginComponent, {
-      data: {
-        name: 'Samuel',
-      },
+      data: {},
     });
   }
 
