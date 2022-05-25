@@ -7,9 +7,11 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  public singleBranchExpand = false;
   priceAnnualMonth = 1;
   isYearlyCheked: boolean = true;
+
+  constructor() {}
 
   ngOnInit(): void {}
 

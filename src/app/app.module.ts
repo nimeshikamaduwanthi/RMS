@@ -13,6 +13,8 @@ import { FooterComponent } from './component/footer/footer.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IgxAccordionModule, IgxSwitchModule } from 'igniteui-angular';
+import { HomeComponent } from './component/home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent,
     RegisterComponent,
     FooterComponent,
+    HomeComponent,
   ],
   exports: [RouterModule],
   imports: [
@@ -33,6 +36,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgxPageScrollCoreModule.forRoot({ duration: 500 }),
     MatDialogModule,
     BrowserAnimationsModule,
+    IgxAccordionModule,
+    IgxSwitchModule,
   ],
   providers: [],
   entryComponents: [RegisterComponent],
