@@ -1,23 +1,22 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-<section>
-    <div class="pricing-container">
-        <div class="pricing-topic">
-            Pricing Tables
-        </div>
-        <div class="pricing-header">
-            Choose Pricing Plans Which Suits Your Needs
-        </div>
-        <div class="switch-container">
-            <p class="switch-content1">Monthly</p>
-            <input type="checkbox" class="toggle" checked>
-            <p class="switch-content2">Annualy</p>
-        </div>
-
+<div class="pricing-container">
+    <div class="pricing-topic">
+        Pricing Tables
+    </div>
+    <div class="pricing-header">
+        Choose Pricing Plans Which Suits Your Needs
+    </div>
+    <div class="switch-container">
+        <p class="switch-content1">Monthly</p>
+        <label id="subscription" class="switch">
+            <input type="checkbox" (change)="handleOnCheck()" checked="isYearlyCheked">
+            <span class="slider round"></span>
+        </label>
+        <p class="switch-content2">Annualy</p>
+    </div>
+    <div>
         <div class="pricing-box-container1">
             <div class="price-header">Basic Pack</div>
-            <div class="price-header-box">$20.00</div>
+            <div class="price-header-box">{{isYearlyCheked ? '$240.00' : '$20.00'}}</div>
             <hr class="hr-line">
             <p class="pricing-content">Extra features <br>Lifetime free support <br>Upgrate options <br> Full access
             </p>
@@ -28,7 +27,7 @@
 
         <div class="pricing-box-container2">
             <div class="price-header price-header-color">Basic Pack</div>
-            <div class="price-header-box price-header-box-color">$20.00</div>
+            <div class="price-header-box price-header-box-color">{{isYearlyCheked ? '$240.00' : '$20.00'}}</div>
             <hr class="hr-line">
             <p class="pricing-content pricing-content-color">Extra features <br>Lifetime free support <br>Upgrate
                 options <br> Full access
@@ -40,7 +39,7 @@
 
         <div class="pricing-box-container2 pricing-box-container2-left">
             <div class="price-header price-header-color">Basic Pack</div>
-            <div class="price-header-box price-header-box-color">$20.00</div>
+            <div class="price-header-box price-header-box-color">{{isYearlyCheked ? '$240.00' : '$20.00'}}</div>
             <hr class="hr-line">
             <p class="pricing-content pricing-content-color">Extra features <br>Lifetime free support <br>Upgrate
                 options <br> Full access
@@ -48,8 +47,7 @@
             <div class="pricing-choose-box pricing-choose-box-color">
                 <div class="price-cbox-content price-cbox-content-color">Choose Plan</div>
             </div>
-
-
         </div>
     </div>
-</section>
+
+</div>

@@ -20,7 +20,7 @@ nav {
   padding: 30px;
 }
 
-ul li {
+.li-font {
   display: inline-block;
   font-family: "Quicksand";
   font-style: normal;

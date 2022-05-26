@@ -8,14 +8,7 @@ import { Component, OnInit } from '@angular/core';
   providers: [DatePipe],
 })
 export class BlogComponent implements OnInit {
-  currentDate = new Date().toString();
-  currentMonth = new Date().toString();
-
-  constructor(private datePipe: DatePipe) {
-    this.currentDate = this.datePipe.transform(this.currentDate, 'dd') ?? '';
-    this.currentMonth = this.datePipe.transform(this.currentMonth, 'MMM') ?? '';
-    console.log(this.datePipe.transform(this.currentDate, 'MMM') ?? '');
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }

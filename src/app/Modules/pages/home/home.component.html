@@ -20,127 +20,23 @@
 </section>
 
 <section id="pricing">
-    <div class="pricing-container">
-        <div class="pricing-topic">
-            Pricing Tables
-        </div>
-        <div class="pricing-header">
-            Choose Pricing Plans Which Suits Your Needs
-        </div>
-        <div class="switch-container">
-            <p class="switch-content1">Monthly</p>
-            <label id="subscription" class="switch">
-                <input type="checkbox" (change)="handleOnCheck()" checked="isYearlyCheked">
-                <span class="slider round"></span>
-            </label>
-            <p class="switch-content2">Annualy</p>
-        </div>
-        <div>
-            <div class="pricing-box-container1">
-                <div class="price-header">Basic Pack</div>
-                <div class="price-header-box">{{isYearlyCheked ? '$240.00' : '$20.00'}}</div>
-                <hr class="hr-line">
-                <p class="pricing-content">Extra features <br>Lifetime free support <br>Upgrate options <br> Full access
-                </p>
-                <div class="pricing-choose-box">
-                    <div class="price-cbox-content">Choose Plan</div>
-                </div>
-            </div>
-
-            <div class="pricing-box-container2">
-                <div class="price-header price-header-color">Basic Pack</div>
-                <div class="price-header-box price-header-box-color">{{isYearlyCheked ? '$240.00' : '$20.00'}}</div>
-                <hr class="hr-line">
-                <p class="pricing-content pricing-content-color">Extra features <br>Lifetime free support <br>Upgrate
-                    options <br> Full access
-                </p>
-                <div class="pricing-choose-box pricing-choose-box-color">
-                    <div class="price-cbox-content price-cbox-content-color">Choose Plan</div>
-                </div>
-            </div>
-
-            <div class="pricing-box-container2 pricing-box-container2-left">
-                <div class="price-header price-header-color">Basic Pack</div>
-                <div class="price-header-box price-header-box-color">{{isYearlyCheked ? '$240.00' : '$20.00'}}</div>
-                <hr class="hr-line">
-                <p class="pricing-content pricing-content-color">Extra features <br>Lifetime free support <br>Upgrate
-                    options <br> Full access
-                </p>
-                <div class="pricing-choose-box pricing-choose-box-color">
-                    <div class="price-cbox-content price-cbox-content-color">Choose Plan</div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <app-pricing></app-pricing>
 </section>
 
-<section>
-    <div class="testimonials-container">
-        <div class="testimonials-img">
-            <img src="/assets/image/about.png" alt="">
-        </div>
-        <div class="testimonials-header">Our Testimonials</div>
-        <div class="testimonials-header-content">What Our Customers Are <br> Talking About</div>
-        <div class="testimonials-conent">
-            This is due to their excellent service, competitive <br> pricing and customer support. It’s throughly
-            refresing <br>
-            to get such a personal touch. Duis aute irure dolor in <br> repre henderit in voluptate velit esse cillum
-            dolore
-            eu <br> fugiat nulla pariatur.
-        </div>
-        <div class="testimonials-footer">Joe Kolmer </div>
-    </div>
+<section id="testimonials">
+    <app-testimonials></app-testimonials>
 </section>
 
-<section>
-    <div class="question-container">
-        <img src="/assets/image/contactImg2.png" alt="" class="contact-img2">
-        <img src="/assets/image/Frequently.png" alt="" class="question-img1">
-        <img src="/assets/image/WanttoAsk.png" alt="" class="question-img2">
-        <img src="/assets/image/Img3.png" alt="" class="question-img3">
-        <div class="question-background1">
-            <p class="question-content1">Pre and post launch mobile app marketing pitfalls to avoid</p>
-        </div>
-        <div class="question-background2">
-            <p class="question-content1 question-content1-color">Pre and post launch mobile app marketing pitfalls to
-                avoid</p>
-            <p class="question-content1-p">There are many variations of passages of available but majority have
-                alteration in some by inject humour
-                or random words. Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="question-background1 question-background3-top">
-            <p class="question-content1">Pre and post launch mobile app marketing pitfalls to avoid</p>
-        </div>
-        <div class="question-background1 question-background4-top">
-            <p class="question-content1">Pre and post launch mobile app marketing pitfalls to avoid</p>
-        </div>
-        <div class="question-background1 question-background5-top">
-            <p class="question-content1">Pre and post launch mobile app marketing pitfalls to avoid</p>
-        </div>
-    </div>
+<section id="questions">
+    <app-questions></app-questions>
 </section>
 
 
-<section>
-    <div class="contact-container">
-        <div class="contact-now">Contact Now</div>
-        <div class="contact-header">Have Question? Write <br> a Message</div>
-
-        <form action="">
-            <div>
-                <input type="text" class="name" placeholder="Name">
-                <input type="text" class="email" placeholder="Email">
-                <textarea name="" id="" cols="30" rows="10" class="messege" placeholder="Messege"></textarea>
-            </div>
-            <button type="submit" class="submit"> <span class="button-submit">Send Message</span></button>
-        </form>
-        <img src="/assets/image/contactImg1.png" alt="" class="contact-img1">
-        <img src="/assets/image/msgImg.png" alt="" class="contact-img">
-    </div>
+<section id="contact">
+    <app-contact></app-contact>
 </section>
 
-<hr class="hr-line hr-line-top">
+<hr class="hr-line">
 
 <section>
     <!-- <app-footer></app-footer> -->

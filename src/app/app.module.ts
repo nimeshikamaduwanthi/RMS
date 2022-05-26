@@ -12,10 +12,21 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FooterComponent } from './Modules/components/shared/footer/footer.component';
+import { FooterComponent } from './Modules/components/footer/footer.component';
+import { HomeComponent } from './Modules/pages/home/home.component';
+import { HomeModule } from './Modules/pages/home/home.module';
+import { BlogComponent } from './Modules/pages/blog/blog.component';
+import { BlogModule } from './Modules/pages/blog/blog.module';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, LoginComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    LoginComponent,
+    FooterComponent,
+    HomeComponent,
+    BlogComponent,
+  ],
   exports: [RouterModule],
   imports: [
     BrowserModule,
@@ -24,9 +35,10 @@ import { FooterComponent } from './Modules/components/shared/footer/footer.compo
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxPageScrollCoreModule.forRoot({ duration: 500 }),
     MatDialogModule,
     BrowserAnimationsModule,
+    HomeModule,
+    BlogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

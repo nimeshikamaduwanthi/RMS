@@ -1,8 +1,5 @@
 .pricing-container {
-  position: absolute;
-  width: 1440px;
-  height: 993px;
-  left: 0px;
+  position: relative;
   top: 3301px;
 }
 
@@ -89,28 +86,68 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.toggle {
-  height: 32px;
-  width: 62px;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
   left: -20px;
   border-radius: 16px;
-  display: inline-block;
-  position: relative;
   margin: 0;
   background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
 }
 
-input::after {
-  content: "";
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 24px;
-  height: 24px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
   border-radius: 50%;
-  background: white;
-  box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
-  transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
 }
 
 .pricing-box-container1 {
@@ -175,6 +212,11 @@ input::after {
   top: 202px;
   background: #f6f6fb;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.hr-line-top {
+  top: 6950px;
+  border: 0.5px solid rgba(157, 156, 156, 0.2);
 }
 
 .pricing-content {

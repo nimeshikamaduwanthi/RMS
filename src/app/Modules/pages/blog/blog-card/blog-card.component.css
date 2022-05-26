@@ -1,0 +1,80 @@
+.blog-card-img {
+  position: absolute;
+  height: 300px;
+  left: 3.85%;
+  right: 3.85%;
+  top: 4.96%;
+  bottom: 37.19%;
+
+  background: #d8d8d8;
+  border-radius: 15px;
+}
+
+.blog-card-date {
+  position: absolute;
+  width: 43.08px;
+  height: 60px;
+  left: 25px;
+  top: 270px;
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+}
+
+.date-num {
+  position: absolute;
+  height: 14px;
+  left: 0%;
+  right: 0%;
+  top: 10%;
+
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.date-month {
+  position: absolute;
+  height: 14px;
+  left: 0%;
+  right: 0%;
+  top: calc(50% - 14px / 2 + 13px);
+
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.blog-card-header {
+  position: absolute;
+  height: 30px;
+  left: 40px;
+  right: 0%;
+  top: 370px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #0f1123;
+}
+
+.blog-card-content {
+  position: absolute;
+  left: 40px;
+  top: 420px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #737789;
+}
