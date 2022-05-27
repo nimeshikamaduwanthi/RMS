@@ -1,40 +1,16 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 <div class="content-box">
     <header class="header">
         Your Account
     </header>
-    <!-- <button class="login-buttn">
-        Login
-    </button> -->
-    <button class="register-buttn">
-        Register
-    </button>
+    <ul>
+        <li class="log-route"><a routerLink="/log">Login</a></li>
+        <button class="register-buttn"><a class="reg-button-text" routerLink="/reg">Register</a></button>
+    </ul>
 
-    <!-- Login Form -->
-    <form #regForm="">
-        <div>
-            <label class="name">Name</label>
-            <input class="name" #name="" type="name" name="name" required placeholder="Name" />
-        </div>
-        <!-- Email -->
-        <div>
-            <label class="email">Email</label>
-            <input class="email" #email="" type="email" name="email" required placeholder="Email" />
-        </div>
-        <!-- Password -->
-        <div>
-            <label class="pw">Password</label>
-            <input class="pw" type="password" name="password" placeholder="Password" />
-        </div>
-        <div>
-            <label class="cpw">Confirm Password</label>
-            <input class="cpw" type="password" name="c-password" placeholder="Confirm Password" />
-        </div>
-        <div>
-            <label class="phonenum">Phone Number</label>
-            <input class="phonenum" type="" name="phonenum" placeholder="Phone Number" />
-        </div>
-        <button class="sub-buttn" type="submit">
-            Submit
-        </button>
-    </form>
+
+    <!-- Register Form -->
+
 </div>

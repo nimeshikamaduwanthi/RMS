@@ -1,0 +1,254 @@
+.pricing-container {
+  position: absolute;
+  width: 1440px;
+  height: 993px;
+  left: 0px;
+  top: 3301px;
+}
+
+.pricing-topic {
+  position: absolute;
+  width: 117px;
+  height: 18px;
+  left: calc(50% - 117px / 2 + 0.5px);
+  top: 50px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #fd632f;
+}
+
+.pricing-header {
+  position: absolute;
+  width: 604px;
+  height: 111px;
+  left: calc(50% - 604px / 2);
+  top: 70px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 55px;
+  /* or 120% */
+
+  text-align: center;
+
+  color: #252c4b;
+}
+
+.switch-container {
+  position: absolute;
+  height: 37px;
+  left: 50%;
+  right: 10.42%;
+  top: 223px;
+}
+
+.switch-content1 {
+  position: absolute;
+  width: 67px;
+  height: 36px;
+  left: -20%;
+  top: 0px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #252c4b;
+}
+
+.switch-content2 {
+  position: absolute;
+  width: 67px;
+  height: 36px;
+  left: 10%;
+  top: 0px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 36px;
+  text-align: center;
+  color: #737789;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+.toggle {
+  height: 32px;
+  width: 62px;
+  left: -20px;
+  border-radius: 16px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+}
+
+input::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+  transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+}
+
+.pricing-box-container1 {
+  position: absolute;
+  height: 611px;
+  width: 350px;
+  left: 10%;
+  right: 0%;
+  top: 300px;
+
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  box-shadow: 10px 10px 60px rgba(46, 61, 98, 0.3);
+  border-radius: 5px;
+}
+
+.price-header {
+  position: absolute;
+  width: 93px;
+  height: 18px;
+  left: calc(50% - 93px / 2 + 1px);
+  top: 56.53px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.price-header-color {
+  color: #252c4b;
+}
+
+.price-header-box {
+  position: absolute;
+  width: 193px;
+  height: 60px;
+  left: calc(50% - 193px / 2 + 1px);
+  top: 74.53px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.price-header-box-color {
+  color: #fd632f;
+}
+
+.hr-line {
+  box-sizing: border-box;
+  position: absolute;
+  height: 1px;
+  left: 0%;
+  right: 0%;
+  top: 202px;
+  background: #f6f6fb;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pricing-content {
+  position: absolute;
+  width: 200px;
+  height: 16px;
+  left: calc(35% - 93px / 2 + 1px);
+  top: 250px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pricing-content-color {
+  color: #737789;
+}
+
+.pricing-choose-box {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 173px;
+  height: 54px;
+  left: 90px;
+  top: 496.53px;
+  border: 2px solid #ffffff;
+}
+
+.pricing-choose-box-color {
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+}
+
+.price-cbox-content {
+  position: absolute;
+  width: 104px;
+  height: 18px;
+  left: 30px;
+  top: 18px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.price-cbox-content-color {
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pricing-box-container2 {
+  position: absolute;
+  height: 611px;
+  width: 350px;
+  left: 40%;
+  right: 0%;
+  top: 300px;
+
+  background: #ffffff;
+  box-shadow: 10px 10px 60px rgba(46, 61, 98, 0.3);
+  border-radius: 5px;
+}
+
+.pricing-box-container2-left {
+  left: 70%;
+}
