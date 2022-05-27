@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pricing.component.css'],
 })
 export class PricingComponent implements OnInit {
-  constructor() {}
   isYearlyCheked: boolean = true;
+
+  constructor() {}
 
   ngOnInit(): void {}
 

@@ -17,6 +17,7 @@ import { HomeComponent } from './Modules/pages/home/home.component';
 import { HomeModule } from './Modules/pages/home/home.module';
 import { BlogComponent } from './Modules/pages/blog/blog.component';
 import { BlogModule } from './Modules/pages/blog/blog.module';
+import { IgxAccordionModule, IgxSwitchModule } from 'igniteui-angular';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,8 @@ import { BlogModule } from './Modules/pages/blog/blog.module';
     HomeModule,
     BlogModule,
     NgxPageScrollCoreModule.forRoot({ duration: 2500 }),
+    IgxAccordionModule,
+    IgxSwitchModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,313 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<section>
+    <img src="/assets/image/homeImg1.png" alt="" class="home-img1">
+    <div class="container">
+        <h1 class="container1">Manage Your</h1>
+        <h1 class="container2">Project with</h1>
+        <h1 class="container3">Application</h1>
+        <p>Nulla facilisi. Proin felis neque, suscipit egestas erat a <br> tincidunt finibus magna consectetur lacus.
+        </p>
+    </div>
+    <div class="img-container">
+        <img src="/assets/image/homeImg.png" alt="">
+    </div>
+</section>
+
+<section>
+    <div>
+        <h6 class="feature-list">Feature List</h6>
+        <h5>Appton Providing You Best Features <br></h5>
+    </div>
+    <div>
+        <div class="box1">
+            <img src="/assets/image/Frame.png" alt="" class="frameImg">
+            <p class="boxtopic">Fully Secure</p>
+            <p class="boxcontent">Lorem ipsum is are many variations of pass majy.</p>
+        </div>
+        <div class="box2">
+            <img src="/assets/image/Frame.png" alt="" class="frameImg">
+            <p class="boxtopic">Fully Secure</p>
+            <p class="boxcontent">Lorem ipsum is are many variations of pass majy.</p>
+        </div>
+        <div class="box3">
+            <img src="/assets/image/Frame.png" alt="" class="frameImg">
+            <p class="boxtopic">Fully Secure</p>
+            <p class="boxcontent">Lorem ipsum is are many variations of pass majy.</p>
+        </div>
+        <div class="box4">
+            <img src="/assets/image/Frame.png" alt="" class="frameImg">
+            <p class="boxtopic">Fully Secure</p>
+            <p class="boxcontent">Lorem ipsum is are many variations of pass majy.</p>
+        </div>
+    </div>
+    <div>
+        <img src="/assets/image/app.png" alt="" class="app-feature">
+    </div>
+    <img src="/assets/image/blogImg2.png" alt="" class="app-img2">
+    <img src="/assets/image/blogImg1.png" alt="" class="app-img1">
+    <div class="app-container">
+        <h6 class="app-topic">Best Application</h6>
+        <p class="app-topic-cont">Powerful Application for<br>Your Projects</p>
+        <p class="app-content-p">Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu
+            fugiat
+            nulla pariatur.</p>
+        <p class="app-frame">
+            Refresing to get such a personal touch. <br>
+            Duis aute irure dolor in <br> reprehenderit in
+            Velit esse cillum dolore eu fugiat nulla <br> pariatur.
+        </p>
+    </div>
+    <div class="feature-list-container">
+        <div class="feature-list-content">
+            <h6 class="feature-list-topic">Feature List</h6>
+            <p class="app-topic-cont">Appton Providing You <br> Best Features</p>
+        </div>
+        <div class="feature-list-img-frame">
+            <div class="img-content1">
+                <img src="/assets/image/Frame.png" alt="" class="feature-list-img">
+                <p class="img-content-p">Responsive <br> Design</p>
+            </div>
+            <div class="img-content2">
+                <img src="/assets/image/Frame.png" alt="" class="feature-list-img">
+                <p class="img-content-p">Online <br> Marketing</p>
+            </div>
+        </div>
+        <div class="feature-list-p">
+            <p class="p-content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+                Lorem Ipsum is simply dummy text of the printing laborum perspiciatis unde.</p>
+        </div>
+        <div class="feature-list-container-img">
+            <img src="/assets/image/FeatureListImg1.png" alt="" class="feature-list-img1">
+            <img src="/assets/image/FeatureListImg2.png" alt="" class="feature-list-img2">
+            <img src="/assets/image/FeatureListImg3.png" alt="" class="feature-list-img3">
+        </div>
+    </div>
+
+</section>
+<section>
+    <div class="pricing-container">
+        <div class="pricing-topic">
+            Pricing Tables
+        </div>
+        <div class="pricing-header">
+            Choose Pricing Plans Which Suits Your Needs
+        </div>
+        <div class="switch-container">
+            <p class="switch-content1">Monthly</p>
+            <label id="subscription" class="switch">
+                <input type="checkbox" (change)="handleOnCheck()" checked="isYearlyCheked">
+                <span class="slider round"></span>
+            </label>
+            <p class="switch-content2">Annualy</p>
+        </div>
+        <div>
+            <div class="pricing-box-container1">
+                <div class="price-header">Basic Pack</div>
+                <div class="price-header-box">{{isYearlyCheked ? '$240.00' : '$20.00'}}</div>
+                <hr class="hr-line">
+                <p class="pricing-content">Extra features <br>Lifetime free support <br>Upgrate options <br> Full access
+                </p>
+                <div class="pricing-choose-box">
+                    <div class="price-cbox-content">Choose Plan</div>
+                </div>
+            </div>
+
+            <div class="pricing-box-container2">
+                <div class="price-header price-header-color">Basic Pack</div>
+                <div class="price-header-box price-header-box-color">{{isYearlyCheked ? '$240.00' : '$20.00'}}</div>
+                <hr class="hr-line">
+                <p class="pricing-content pricing-content-color">Extra features <br>Lifetime free support <br>Upgrate
+                    options <br> Full access
+                </p>
+                <div class="pricing-choose-box pricing-choose-box-color">
+                    <div class="price-cbox-content price-cbox-content-color">Choose Plan</div>
+                </div>
+            </div>
+
+            <div class="pricing-box-container2 pricing-box-container2-left">
+                <div class="price-header price-header-color">Basic Pack</div>
+                <div class="price-header-box price-header-box-color">{{isYearlyCheked ? '$240.00' : '$20.00'}}</div>
+                <hr class="hr-line">
+                <p class="pricing-content pricing-content-color">Extra features <br>Lifetime free support <br>Upgrate
+                    options <br> Full access
+                </p>
+                <div class="pricing-choose-box pricing-choose-box-color">
+                    <div class="price-cbox-content price-cbox-content-color">Choose Plan</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="testimonials-container">
+        <div class="testimonials-img">
+            <img src="/assets/image/about.png" alt="">
+        </div>
+        <div class="testimonials-header">Our Testimonials</div>
+        <div class="testimonials-header-content">What Our Customers Are <br> Talking About</div>
+        <div class="testimonials-conent">
+            This is due to their excellent service, competitive <br> pricing and customer support. It’s throughly
+            refresing <br>
+            to get such a personal touch. Duis aute irure dolor in <br> repre henderit in voluptate velit esse cillum
+            dolore
+            eu <br> fugiat nulla pariatur.
+        </div>
+        <div class="testimonials-footer">Joe Kolmer </div>
+    </div>
+</section>
+
+<section>
+    <div class="question-container">
+        <img src="/assets/image/contactImg2.png" alt="" class="contact-img2">
+        <img src="/assets/image/Frequently.png" alt="" class="question-img1">
+        <img src="/assets/image/WanttoAsk.png" alt="" class="question-img2">
+        <img src="/assets/image/Img3.png" alt="" class="question-img3">
+        <!-- <div class="question-background1">
+            <p class="question-content1">Pre and post launch mobile app marketing pitfalls to avoid</p>
+        </div>
+        <div class="question-background2">
+            <p class="question-content1 question-content1-color">Pre and post launch mobile app marketing pitfalls to
+                avoid</p>
+            <p class="question-content1-p">There are many variations of passages of available but majority have
+                alteration in some by inject humour
+                or random words. Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="question-background1 question-background3-top">
+            <p class="question-content1">Pre and post launch mobile app marketing pitfalls to avoid</p>
+        </div>
+        <div class="question-background1 question-background4-top">
+            <p class="question-content1">Pre and post launch mobile app marketing pitfalls to avoid</p>
+        </div>
+        <div class="question-background1 question-background5-top">
+            <p class="question-content1">Pre and post launch mobile app marketing pitfalls to avoid</p>
+        </div> -->
+
+        <article class="acc-wrapper">
+            <igx-accordion #accordion [singleBranchExpand]="singleBranchExpand">
+                <igx-expansion-panel>
+                    <igx-expansion-panel-header>
+                        <igx-expansion-panel-title>Pre and post launch mobile app marketing
+                            pitfalls to avoid
+                        </igx-expansion-panel-title>
+                    </igx-expansion-panel-header>
+                    <igx-expansion-panel-body>
+                        <div class="body-container">
+                            There are many variations of passages of available but majority have
+                            alteration in some by inject humour
+                            or random words. Lorem ipsum dolor sit amet.
+                        </div>
+                    </igx-expansion-panel-body>
+                </igx-expansion-panel>
+            </igx-accordion>
+        </article>
+
+        <article class="acc-wrapper acc-wrapper2-top">
+            <igx-accordion #accordion [singleBranchExpand]="singleBranchExpand">
+                <igx-expansion-panel>
+                    <igx-expansion-panel-header>
+                        <igx-expansion-panel-title>Pre and post launch mobile app marketing
+                            pitfalls to avoid
+                        </igx-expansion-panel-title>
+                    </igx-expansion-panel-header>
+                    <igx-expansion-panel-body>
+                        <div class="body-container">
+                            There are many variations of passages of available but majority have
+                            alteration in some by inject humour
+                            or random words. Lorem ipsum dolor sit amet.
+                        </div>
+                    </igx-expansion-panel-body>
+                </igx-expansion-panel>
+            </igx-accordion>
+        </article>
+
+        <article class="acc-wrapper acc-wrapper3-top">
+            <igx-accordion #accordion [singleBranchExpand]="singleBranchExpand">
+                <igx-expansion-panel>
+                    <igx-expansion-panel-header>
+                        <igx-expansion-panel-title>Pre and post launch mobile app marketing
+                            pitfalls to avoid
+                        </igx-expansion-panel-title>
+                    </igx-expansion-panel-header>
+                    <igx-expansion-panel-body>
+                        <div class="body-container">
+                            There are many variations of passages of available but majority have
+                            alteration in some by inject humour
+                            or random words. Lorem ipsum dolor sit amet.
+                        </div>
+                    </igx-expansion-panel-body>
+                </igx-expansion-panel>
+            </igx-accordion>
+        </article>
+
+        <article class="acc-wrapper acc-wrapper4-top">
+            <igx-accordion #accordion [singleBranchExpand]="singleBranchExpand">
+                <igx-expansion-panel>
+                    <igx-expansion-panel-header>
+                        <igx-expansion-panel-title>Pre and post launch mobile app marketing
+                            pitfalls to avoid
+                        </igx-expansion-panel-title>
+                    </igx-expansion-panel-header>
+                    <igx-expansion-panel-body>
+                        <div class="body-container">
+                            There are many variations of passages of available but majority have
+                            alteration in some by inject humour
+                            or random words. Lorem ipsum dolor sit amet.
+                        </div>
+                    </igx-expansion-panel-body>
+                </igx-expansion-panel>
+            </igx-accordion>
+        </article>
+
+        <article class="acc-wrapper acc-wrapper5-top">
+            <igx-accordion #accordion [singleBranchExpand]="singleBranchExpand">
+                <igx-expansion-panel>
+                    <igx-expansion-panel-header>
+                        <igx-expansion-panel-title>Pre and post launch mobile app marketing
+                            pitfalls to avoid
+                        </igx-expansion-panel-title>
+                    </igx-expansion-panel-header>
+                    <igx-expansion-panel-body>
+                        <div class="body-container">
+                            There are many variations of passages of available but majority have
+                            alteration in some by inject humour
+                            or random words. Lorem ipsum dolor sit amet.
+                        </div>
+                    </igx-expansion-panel-body>
+                </igx-expansion-panel>
+            </igx-accordion>
+        </article>
+
+
+
+    </div>
+</section>
+
+
+<section>
+    <div class="contact-container">
+        <div class="contact-now">Contact Now</div>
+        <div class="contact-header">Have Question? Write <br> a Message</div>
+
+        <form action="">
+            <div>
+                <input type="text" class="name" placeholder="Name">
+                <input type="text" class="email" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="10" class="messege" placeholder="Messege"></textarea>
+            </div>
+            <button type="submit" class="submit"> <span class="button-submit">Send Message</span></button>
+        </form>
+        <img src="/assets/image/contactImg1.png" alt="" class="contact-img1">
+        <img src="/assets/image/msgImg.png" alt="" class="contact-img">
+    </div>
+</section>
+
+<hr class="hr-line hr-line-top">
+
+<section>
+    <!-- <app-footer></app-footer> -->
+</section>
