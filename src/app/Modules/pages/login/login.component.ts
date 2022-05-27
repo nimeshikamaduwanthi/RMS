@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   inSubmission = false;
   Name;
   isHiddenReg: boolean = false;
+  isHiddenPopup: boolean = false;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -95,5 +96,9 @@ export class LoginComponent implements OnInit {
 
   goToRegister() {
     this.isHiddenReg = true;
+  }
+
+  onNoClick() {
+    this.isHiddenPopup = true;
   }
 }

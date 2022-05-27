@@ -16,10 +16,20 @@ p {
   width: 1440px;
 }
 
+.login {
+  border: none;
+  background: none;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  color: #737789;
+}
+
 .container {
   clear: both;
   overflow: auto;
-  background-color: blueviolet;
 }
 
 nav {
@@ -29,8 +39,8 @@ nav {
 .logo img {
   float: left;
   height: 100px;
-  left: 150px;
-  top: 20px;
+  top: 40px;
+  margin-left: 100px;
   border-radius: 0px;
   padding: 30px;
 }

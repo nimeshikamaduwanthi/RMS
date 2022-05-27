@@ -1,9 +1,11 @@
 #home {
   width: 1440px;
+  height: 843px;
 }
 
 #features {
   width: 1440px;
+  height: 2250px;
 }
 
 #pricing {
@@ -28,15 +30,14 @@
   left: 0%;
   right: 0%;
   top: 88px;
-  background-color: aquamarine;
 }
 
 h1.container1 {
   position: absolute;
   height: 84px;
-  left: 5%;
+  left: 10%;
   right: 33.28%;
-  top: 280px;
+  top: 140px;
 
   font-family: "Quicksand";
   font-style: normal;
@@ -76,9 +77,9 @@ h1.container1 {
 h1.container2 {
   position: absolute;
   height: 84px;
-  left: 5%;
+  left: 10%;
   right: 40%;
-  top: 360px;
+  top: 230px;
 
   font-family: "Quicksand";
   font-style: normal;
@@ -91,9 +92,9 @@ h1.container2 {
 h1.container3 {
   position: absolute;
   height: 84px;
-  left: 5%;
+  left: 10%;
   right: 42.99%;
-  top: 440px;
+  top: 310px;
 
   font-family: "Quicksand";
   font-style: normal;
@@ -106,9 +107,9 @@ h1.container3 {
 p {
   position: absolute;
   height: 36px;
-  left: 5%;
+  left: 10%;
   right: 34.63%;
-  top: 530px;
+  top: 400px;
 
   font-family: "Quicksand";
   font-style: normal;
@@ -122,8 +123,7 @@ p {
   position: absolute;
   width: 1034px;
   height: 843px;
-  left: 406px;
-  top: 70px;
+  left: 500px;
 }
 
 .footer-header2 {

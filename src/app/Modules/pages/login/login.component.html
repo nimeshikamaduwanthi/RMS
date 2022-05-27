@@ -1,59 +1,75 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-<div class="content-box">
-    <header class="header">
-        Your Account
-    </header>
+<div id="login" *ngIf="!isHiddenPopup">
+    <div class="content-box1" *ngIf="!isHiddenReg">
+        <button class="close" (click)="onNoClick()">X</button>
+        <header class="header">
+            Your Account
+        </header>
 
-    <button class="login-buttn login-buttn-text" (click)="goToLogin()">Login</button>
-    <!-- <li class="reg-route"><a routerLink="/reg">Register</a></li> -->
-    <button class="register-buttn reg-button-text" (click)="goToRegister()">Register</button>
-    <!-- <li class="reg-route"><button (click)="handleOnClick()">Register</button></li> -->
+        <button class="login-buttn login-buttn-text" (click)="goToLogin()">Login</button>
+        <!-- <li class="reg-route"><a routerLink="/reg">Register</a></li> -->
+        <button class="register-buttn reg-button-text" (click)="goToRegister()">Register</button>
+        <!-- <li class="reg-route"><button (click)="handleOnClick()">Register</button></li> -->
 
-    <div *ngIf="!isHiddenReg">
-        <!-- Login Form -->
-        <form #loginForm="">
-            <div>
-                <label class="email">Email</label>
-                <input class="email" #email="" type="email" name="email" required placeholder="Email" />
-            </div>
-            <div>
-                <label class="pw">Password</label>
-                <input class="pw" type="password" name="password" placeholder="Password" />
-            </div>
-            <button class="sub-buttn sut-text" type="submit">
-                Submit
-            </button>
-        </form>
+        <div>
+            <!-- Login Form -->
+            <form #loginForm="">
+                <div>
+                    <label class="email-log">Email</label>
+                    <input class="email-log" #email="" type="email" name="email" required placeholder="Email" />
+                </div>
+                <div>
+                    <label class="pw-log">Password</label>
+                    <input class="pw-log" type="password" name="password" placeholder="Password" />
+                </div>
+                <button class="sub-buttn sut-text" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
     </div>
 
-    <div *ngIf="isHiddenReg">
-        <form [formGroup]="registerForm">
-            <div>
-                <label class="name">Name</label>
-                <input control="name" class="name" #name="" type="name" name="name" required placeholder="Name" />
-            </div>
-            <div>
-                <label class="email">Email</label>
-                <input control="email" class="email" #email="" type="email" name="email" required placeholder="Email" />
-            </div>
-            <div>
-                <label class="pw">Password</label>
-                <input control="password" class="pw" type="password" name="password" placeholder="Password" />
-            </div>
-            <div>
-                <label class="cpw">Confirm Password</label>
-                <input control="confirm_password" class="cpw" type="password" name="c-password"
-                    placeholder="Confirm Password" />
-            </div>
-            <div>
-                <label class="phonenum">Phone Number</label>
-                <input control="phoneNumber" class="phonenum" type="" name="phonenum" placeholder="Phone Number" />
-            </div>
-            <button class="sub-buttn sut-text" type="submit">
-                Submit
-            </button>
-        </form>
+    <div class="content-box2" *ngIf="isHiddenReg">
+        <button class="close" (click)="onNoClick()">X</button>
+        <header class="header">
+            Your Account
+        </header>
+
+        <button class="login-buttn login-buttn-text" (click)="goToLogin()">Login</button>
+        <!-- <li class="reg-route"><a routerLink="/reg">Register</a></li> -->
+        <button class="register-buttn reg-button-text" (click)="goToRegister()">Register</button>
+        <!-- <li class="reg-route"><button (click)="handleOnClick()">Register</button></li> -->
+
+        <div>
+            <form [formGroup]="registerForm">
+                <div>
+                    <label class="name">Name</label>
+                    <input control="name" class="name" #name="" type="name" name="name" required placeholder="Name" />
+                </div>
+                <div>
+                    <label class="email">Email</label>
+                    <input control="email" class="email" #email="" type="email" name="email" required
+                        placeholder="Email" />
+                </div>
+                <div>
+                    <label class="pw">Password</label>
+                    <input control="password" class="pw" type="password" name="password" placeholder="Password" />
+                </div>
+                <div>
+                    <label class="cpw">Confirm Password</label>
+                    <input control="confirm_password" class="cpw" type="password" name="c-password"
+                        placeholder="Confirm Password" />
+                </div>
+                <div>
+                    <label class="phonenum">Phone Number</label>
+                    <input control="phoneNumber" class="phonenum" type="" name="phonenum" placeholder="Phone Number" />
+                </div>
+                <button class="sub-buttn1 sut-text1" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
     </div>
 </div>

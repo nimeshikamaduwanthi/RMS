@@ -1,8 +1,32 @@
-* {
-  box-sizing: 1440px;
+#login {
+  width: 1440px;
+  height: 843px;
 }
 
-.content-box {
+.close {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  padding: 10px;
+  line-height: 14px;
+  min-width: auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.content-box1 {
+  position: absolute;
+  width: 754px;
+  height: 460px;
+  left: 343px;
+  top: 70px;
+
+  background: #ffffff;
+  border: 1px solid #353535;
+  border-radius: 50px;
+}
+
+.content-box2 {
   position: absolute;
   width: 754px;
   height: 660px;
@@ -125,12 +149,12 @@ label {
   line-height: 25px;
 }
 
-label.email {
-  top: 200px;
+label.email-log {
+  top: 180px;
 }
 
-label.pw {
-  top: 300px;
+label.pw-log {
+  top: 280px;
 }
 
 input {
@@ -142,12 +166,12 @@ input {
   border: 1px solid #353535;
 }
 
-input.email {
-  top: 250px;
+input.email-log {
+  top: 210px;
 }
 
-input.pw {
-  top: 350px;
+input.pw-log {
+  top: 310px;
 }
 
 .register {
@@ -184,13 +208,35 @@ input.pw {
   width: 560px;
   height: 54px;
   left: 90px;
-  top: 580px;
+  top: 380px;
 
   background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
   border-radius: 10px;
   border: none;
 }
 .sut-text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #353535;
+}
+
+.sub-buttn1 {
+  position: absolute;
+  width: 560px;
+  height: 54px;
+  left: 90px;
+  top: 580px;
+
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  border-radius: 10px;
+  border: none;
+}
+.sut-text1 {
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 500;

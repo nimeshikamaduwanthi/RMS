@@ -40,7 +40,7 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     BrowserAnimationsModule,
     HomeModule,
     BlogModule,
-    NgxPageScrollCoreModule.forRoot({ duration: 2500 }),
+    NgxPageScrollCoreModule.forRoot({ duration: 100 }),
     NgxPageScrollModule,
   ],
   providers: [],

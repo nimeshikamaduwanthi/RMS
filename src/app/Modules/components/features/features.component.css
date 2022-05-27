@@ -100,7 +100,6 @@ h5 {
 .app-container {
   position: absolute;
   height: 524px;
-  width: 1440px;
   left: 51.04%;
   right: 10.62%;
   top: 850px;
@@ -171,7 +170,7 @@ h5 {
   position: absolute;
   height: 792px;
   left: 0%;
-  right: 0%;
+  right: -10%;
   top: 1500px;
 
   background: #f6f6fb;

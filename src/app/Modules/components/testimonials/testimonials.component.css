@@ -1,9 +1,8 @@
 .testimonials-container {
   position: absolute;
-  width: 1440px;
   height: 736px;
   left: 0%;
-  right: 0%;
+  right: -10%;
   top: 4400px;
 
   background: #f6f6fb;
