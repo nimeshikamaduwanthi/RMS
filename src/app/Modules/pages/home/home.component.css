@@ -1,12 +1,31 @@
-* {
-  box-sizing: 1440px;
+#home {
+  width: 1440px;
+}
+
+#features {
+  width: 1440px;
+}
+
+#pricing {
+  width: 1440px;
+}
+
+#testimonials {
+  width: 1440px;
+}
+
+#questions {
+  width: 1440px;
+}
+
+#contact {
+  width: 1440px;
 }
 
 .container {
   position: absolute;
   height: 581px;
   left: 2.5%;
-  right: 41.67%;
   top: -62px;
 }
 

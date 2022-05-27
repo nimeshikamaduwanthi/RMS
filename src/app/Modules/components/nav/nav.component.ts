@@ -9,6 +9,7 @@ import { LoginComponent } from 'src/app/Modules/pages/login/login.component';
 })
 export class NavComponent implements OnInit {
   lordPopup: boolean = false;
+  currentSection = '';
   constructor(private dialogRef: MatDialog) {}
 
   openDialog() {

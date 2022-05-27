@@ -39,6 +39,7 @@ import { BlogModule } from './Modules/pages/blog/blog.module';
     BrowserAnimationsModule,
     HomeModule,
     BlogModule,
+    NgxPageScrollCoreModule.forRoot({ duration: 2500 }),
   ],
   providers: [],
   bootstrap: [AppComponent],

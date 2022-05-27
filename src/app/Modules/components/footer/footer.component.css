@@ -2,6 +2,10 @@
   box-sizing: 1440px;
 }
 
+#footer {
+  width: 1440px;
+}
+
 .footer-container {
   position: absolute;
   height: 480px;

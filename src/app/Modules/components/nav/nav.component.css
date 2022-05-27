@@ -2,6 +2,10 @@
   box-sizing: 1440px;
 }
 
+#nav {
+  width: 1440px;
+}
+
 .container {
   clear: both;
   overflow: auto;

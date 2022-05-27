@@ -1,4 +1,4 @@
-<div class="container">
+<div id="nav" class="container">
     <div class="logo">
         <img src="/assets/image/mainLogo.png" alt="">
     </div>
@@ -6,11 +6,13 @@
         <ul>
             <li class="li-font"><a routerLink="">Home</a></li>
             <li class="li-font"><a pageScroll [routerLink]="['/features']">Features</a></li>
+            <!-- <li [ngClass]="{'active':currentSection === 'features'}"> <a pageScroll="'#features'"
+                    href="javascript: void(0);">Features</a></li> -->
             <li class="li-font"><a routerLink="/pricing">Pricing</a></li>
-            <li class="li-font"><a routerLink="/blog">Blog</a></li>
-            <li class="li-font"><button class="btn btn-primary" (click)="openDialog()">
+            <li class="li-font"><a href="/blog">Blog</a></li>
+            <!-- <li class="li-font"><button class="btn btn-primary" (click)="openDialog()">
                     Login
-                </button></li>
+                </button></li> -->
         </ul>
     </nav>
 </div>
