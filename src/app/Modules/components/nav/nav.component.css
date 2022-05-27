@@ -2,6 +2,16 @@
   box-sizing: 1440px;
 }
 
+p {
+  font-family: Lato;
+}
+
+.placeholder {
+  height: 750px;
+  width: 100%;
+  background-color: beige;
+}
+
 #nav {
   width: 1440px;
 }
@@ -9,6 +19,7 @@
 .container {
   clear: both;
   overflow: auto;
+  background-color: blueviolet;
 }
 
 nav {

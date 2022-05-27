@@ -1,18 +1,55 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;1,100&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet">
+
 <div id="nav" class="container">
     <div class="logo">
         <img src="/assets/image/mainLogo.png" alt="">
     </div>
     <nav>
         <ul>
-            <li class="li-font"><a routerLink="">Home</a></li>
-            <li class="li-font"><a pageScroll [routerLink]="['/features']">Features</a></li>
-            <!-- <li [ngClass]="{'active':currentSection === 'features'}"> <a pageScroll="'#features'"
-                    href="javascript: void(0);">Features</a></li> -->
-            <li class="li-font"><a routerLink="/pricing">Pricing</a></li>
+            <li class="li-font"><a href="">Home</a></li>
+            <li class="li-font"><a href="#features" pageScroll>features</a></li>
+            <li class="li-font"><a href="#pricing" pageScroll>Pricing</a></li>
             <li class="li-font"><a href="/blog">Blog</a></li>
-            <!-- <li class="li-font"><button class="btn btn-primary" (click)="openDialog()">
+            <li class="li-font"><button class="btn btn-primary" (click)="openDialog()">
                     Login
-                </button></li> -->
+                </button></li>
         </ul>
     </nav>
 </div>
+
+<!-- <div class="pure-g">
+    <div class="pure-u-1-2">
+        
+    </div>
+    <div class="pure-u-1-2">
+        <p>
+            <a class="pure-button pure-button-primary" (click)="ngOnInit()">
+                Go to end via service
+            </a>
+        </p>
+    </div>
+</div>
+<div class="placeholder"></div>
+<p class="theEnd">End of qpage</p> -->
+
+<!-- <div id="nav" class="container">
+    <div class="logo">
+        <img src="/assets/image/mainLogo.png" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a routerLink="">Home</a></li>
+            <li><a class="pure-button pure-button-primary" href="#features" pageScroll>features</a></li>
+            <li class="li-font"><a routerLink="/pricing">Pricing</a></li>
+            <li class="li-font"><a href="/blog">Blog</a></li>
+            <li class="li-font"><button class="btn btn-primary" (click)="openDialog()">
+                    Login
+                </button></li>
+        </ul>
+    </nav>
+</div> -->

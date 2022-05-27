@@ -12,6 +12,8 @@ import { TestimonialsComponent } from '../../components/testimonials/testimonial
 import { FeaturesModule } from '../../components/features/features.module';
 import { PricingModule } from '../../components/pricing/pricing.module';
 import { PricingComponent } from '../../components/pricing/pricing.component';
+import { QuestionsModule } from '../../components/questions/questions.module';
+import { NavComponent } from '../../components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { PricingComponent } from '../../components/pricing/pricing.component';
     NgxPageScrollCoreModule.forRoot({ duration: 500 }),
     FeaturesModule,
     PricingModule,
+    QuestionsModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

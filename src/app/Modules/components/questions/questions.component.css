@@ -1,7 +1,7 @@
 .question-container {
   position: absolute;
   width: 1440px;
-  height: 1194px;
+  height: 1000px;
   left: 0px;
   top: 5130px;
 }
@@ -40,15 +40,15 @@
 }
 
 .question-background3-top {
-  top: 620px;
+  top: 520px;
 }
 
 .question-background4-top {
-  top: 720px;
+  top: 630px;
 }
 
 .question-background5-top {
-  top: 820px;
+  top: 740px;
 }
 
 .question-content1 {
@@ -66,10 +66,10 @@
 
 .question-background2 {
   position: absolute;
-  height: 194px;
+  height: 87px;
   left: 12%;
   right: 10%;
-  top: 400px;
+  top: 410px;
   background: #ffffff;
   border: 1px solid #e8e8ef;
 }

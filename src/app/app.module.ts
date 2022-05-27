@@ -13,22 +13,22 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './Modules/components/footer/footer.component';
-import { HomeComponent } from './Modules/pages/home/home.component';
 import { HomeModule } from './Modules/pages/home/home.module';
 import { BlogComponent } from './Modules/pages/blog/blog.component';
+import { HomeComponent } from './Modules/pages/home/home.component';
 import { BlogModule } from './Modules/pages/blog/blog.module';
-import { IgxAccordionModule, IgxSwitchModule } from 'igniteui-angular';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
     LoginComponent,
     FooterComponent,
     HomeComponent,
     BlogComponent,
+    NavComponent,
   ],
-  exports: [RouterModule],
+  exports: [RouterModule, NavComponent],
   imports: [
     BrowserModule,
     NgbModule,
@@ -41,8 +41,7 @@ import { IgxAccordionModule, IgxSwitchModule } from 'igniteui-angular';
     HomeModule,
     BlogModule,
     NgxPageScrollCoreModule.forRoot({ duration: 2500 }),
-    IgxAccordionModule,
-    IgxSwitchModule,
+    NgxPageScrollModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
