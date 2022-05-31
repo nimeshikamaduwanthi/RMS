@@ -1,11 +1,9 @@
 #home {
   width: 1440px;
-  height: 843px;
 }
 
 #features {
   width: 1440px;
-  height: 2250px;
 }
 
 #pricing {
@@ -24,12 +22,19 @@
   width: 1440px;
 }
 
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+
 .container {
   position: absolute;
   height: 843px;
   left: 0%;
   right: 0%;
   top: 88px;
+  margin: auto;
+  width: 1440px;
+  height: 843px;
 }
 
 h1.container1 {
@@ -146,6 +151,7 @@ p {
   height: 1px;
   left: 0%;
   right: 0%;
+  max-width: 1440px;
   top: 7000px;
 
   background: #e4e4ee;

@@ -11,7 +11,7 @@ import { PageScrollService } from 'ngx-page-scroll-core';
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
-  lordPopup: boolean = false;
+  loadPopup: boolean = false;
   currentSection = '';
   constructor(
     private dialogRef: MatDialog,
@@ -19,17 +19,18 @@ export class NavComponent implements OnInit {
     @Inject(DOCUMENT) private document: any
   ) {}
 
-  openDialog() {
-    this.lordPopup = true;
-    this.dialogRef.open(LoginComponent, {
-      data: {},
-    });
-  }
-
   ngOnInit(): void {
     this.pageScrollService.scroll({
       document: this.document,
       scrollTarget: '',
+    });
+  }
+
+  openDialog() {
+    this.loadPopup = true;
+    this.dialogRef.open(LoginComponent, {
+      data: {},
+      backdropClass: 'backdropBackground',
     });
   }
 }

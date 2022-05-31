@@ -3,7 +3,9 @@
   width: 1440px;
   height: 1000px;
   left: 0px;
+  right: 0%;
   top: 5130px;
+  margin: auto;
 }
 
 .question-img1 {

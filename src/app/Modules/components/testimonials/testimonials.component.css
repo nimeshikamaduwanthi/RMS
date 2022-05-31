@@ -1,9 +1,11 @@
 .testimonials-container {
   position: absolute;
   height: 736px;
+  width: 1440px;
   left: 0%;
-  right: -10%;
+  right: 0%;
   top: 4400px;
+  margin: auto;
 
   background: #f6f6fb;
   border-radius: 0px;
@@ -35,7 +37,7 @@
   position: absolute;
   height: 111px;
   left: 48%;
-  top: 170px;
+  top: 190px;
 
   font-family: "Quicksand";
   font-style: normal;

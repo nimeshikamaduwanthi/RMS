@@ -71,6 +71,7 @@
 
 .pricing-choose-box-color {
   border: 2px solid;
+
   border-image-source: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
 }
 

@@ -1,9 +1,11 @@
 .feature-container {
   position: absolute;
   width: 1440px;
-  height: 777px;
+  height: 2250px;
   left: 0px;
+  right: 0%;
   top: 931px;
+  margin: auto;
 }
 
 .feature-list {
@@ -26,7 +28,7 @@ h5 {
   width: 481px;
   height: 111px;
   left: calc(50% - 481px / 2 + 0.5px);
-  top: 130px;
+  top: 100px;
 
   font-family: "Quicksand";
   font-style: normal;
@@ -89,6 +91,31 @@ h5 {
   border-radius: 25px;
 }
 
+.feature-app-container {
+  position: absolute;
+  width: 1440px;
+  height: 848px;
+  left: 0px;
+}
+
+.f-app-img2 {
+  position: absolute;
+  height: 673px;
+  left: 83.89%;
+  right: 0%;
+  top: 787px;
+  border-radius: 0px;
+}
+
+.f-app-img1 {
+  position: absolute;
+  height: 196px;
+  left: 83.26%;
+  right: 3.61%;
+  top: 1200px;
+  border-radius: 0px;
+}
+
 .app-feature {
   position: absolute;
   width: 472px;
@@ -125,7 +152,7 @@ h5 {
   height: 111px;
   left: 0%;
   width: 600px;
-  top: 21px;
+  top: 0px;
 
   font-family: "Quicksand";
   font-style: normal;
@@ -172,6 +199,7 @@ h5 {
   left: 0%;
   right: -10%;
   top: 1500px;
+  max-width: 1440px;
 
   background: #f6f6fb;
   border-radius: 0px;
@@ -227,8 +255,7 @@ h5 {
   height: 30px;
   left: 52.38%;
   right: 0%;
-  top: calc(50% - 30px / 2 - 15.5px);
-
+  top: -10px;
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 400;

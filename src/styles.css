@@ -12,3 +12,7 @@ li.home {
   font-size: 16px;
   line-height: 36px;
 } */
+
+.backdropBackground {
+  background-color: blue !important;
+}

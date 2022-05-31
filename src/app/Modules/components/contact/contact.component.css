@@ -4,7 +4,16 @@
   width: 1440px;
   left: 0%;
   right: 0%;
+  margin: auto;
   top: 6324px;
+}
+
+.placeholder {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .contact-now {
@@ -27,7 +36,7 @@
   height: 111px;
   left: 10%;
   right: 25%;
-  top: 30px;
+  top: 50px;
 
   font-family: "Quicksand";
   font-style: normal;
@@ -83,23 +92,22 @@ textarea.messege {
 }
 
 button.submit {
-  box-sizing: border-box;
-
   position: absolute;
   width: 173px;
   height: 54px;
   left: 10%;
   top: 550px;
-  background: #ffffff;
-  border: 1px solid rgba(95, 96, 237, 1);
+  background: linear-gradient(180deg, #5f60ed 0%, #f77454 100%);
+  padding: 2px;
+  border: none;
 }
 
 .button-submit {
   position: absolute;
   width: 121px;
   height: 18px;
-  left: 20px;
-  top: 15px;
+  left: 23px;
+  top: 17px;
 
   font-family: "Quicksand";
   font-style: normal;
@@ -112,6 +120,13 @@ button.submit {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.button-box-in {
+  background-color: #ffffff;
+  height: 50px;
+  width: 169.5px;
+  padding: 0.5px;
 }
 
 .contact-img {
