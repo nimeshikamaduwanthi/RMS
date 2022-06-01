@@ -5,6 +5,7 @@ import { BlogComponent } from './Modules/pages/blog/blog.component';
 import { FeaturesComponent } from './Modules/components/features/features.component';
 import { HomeComponent } from './Modules/pages/home/home.component';
 import { PricingComponent } from './Modules/components/pricing/pricing.component';
+import { LoginComponent } from './Modules/pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
 ];
 

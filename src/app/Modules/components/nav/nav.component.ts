@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from 'src/app/Modules/pages/login/login.component';
 import { Inject } from '@angular/core';
@@ -13,6 +13,7 @@ import { PageScrollService } from 'ngx-page-scroll-core';
 export class NavComponent implements OnInit {
   loadPopup: boolean = false;
   currentSection = '';
+
   constructor(
     private dialogRef: MatDialog,
     private pageScrollService: PageScrollService,

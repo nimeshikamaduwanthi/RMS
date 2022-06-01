@@ -19,16 +19,10 @@ export class LoginComponent implements OnInit {
   alertMsg = 'Please wait! We are loggin you in.';
   alertColor = 'blue';
   inSubmission = false;
-  Name;
   isHiddenReg: boolean = false;
   isHiddenPopup: boolean = false;
 
-  constructor(
-    @Inject(MAT_DIALOG_DATA) public data: any,
-    private router: Router
-  ) {
-    this.Name = data.name;
-  }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 

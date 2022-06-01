@@ -26,7 +26,8 @@
 .question-img3 {
   position: absolute;
   height: 926px;
-  left: 3%;
+  width: 1440px;
+  left: 0%;
   right: 0%;
   top: 200px;
 }

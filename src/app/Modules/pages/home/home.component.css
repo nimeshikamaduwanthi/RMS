@@ -1,9 +1,11 @@
 #home {
   width: 1440px;
+  height: 790px;
 }
 
 #features {
   width: 1440px;
+  height: 2400px;
 }
 
 #pricing {
@@ -126,9 +128,9 @@ p {
 
 .img-container img {
   position: absolute;
-  width: 1034px;
   height: 843px;
-  left: 500px;
+  left: 30%;
+  top: -20px;
 }
 
 .footer-header2 {

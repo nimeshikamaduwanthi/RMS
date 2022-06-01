@@ -11,6 +11,7 @@ p {
 #nav {
   width: 1440px;
   margin: auto;
+  z-index: 5;
 }
 
 .login {
@@ -25,8 +26,12 @@ p {
 }
 
 .container {
-  clear: both;
-  overflow: auto;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  top: 0;
 }
 
 nav {

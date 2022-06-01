@@ -3,7 +3,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 <div id="login" *ngIf="!isHiddenPopup">
     <div class="content-box1" *ngIf="!isHiddenReg">
-        <button class="close" (click)="onNoClick()">X</button>
+        <!-- <button class="close" (click)="onNoClick()">X</button> -->
         <header class="header">
             Your Account
         </header>
@@ -18,11 +18,12 @@
             <form #loginForm="">
                 <div>
                     <label class="email-log">Email</label>
-                    <input class="email-log" #email="" type="email" name="email" required placeholder="Email" />
+                    <input class="email-log placeholder" #email="" type="email" name="email" required
+                        placeholder="Email" />
                 </div>
                 <div>
                     <label class="pw-log">Password</label>
-                    <input class="pw-log" type="password" name="password" placeholder="Password" />
+                    <input class="pw-log placeholder" type="password" name="password" placeholder="Password" />
                 </div>
                 <button class="sub-buttn sut-text" type="submit">
                     Submit
@@ -32,7 +33,7 @@
     </div>
 
     <div class="content-box2" *ngIf="isHiddenReg">
-        <button class="close" (click)="onNoClick()">X</button>
+        <!-- <button class="close" (click)="onNoClick()">X</button> -->
         <header class="header">
             Your Account
         </header>
@@ -46,25 +47,28 @@
             <form [formGroup]="registerForm">
                 <div>
                     <label class="name">Name</label>
-                    <input control="name" class="name" #name="" type="name" name="name" required placeholder="Name" />
+                    <input control="name" class="name placeholder" #name="" type="name" name="name" required
+                        placeholder="Name" />
                 </div>
                 <div>
                     <label class="email">Email</label>
-                    <input control="email" class="email" #email="" type="email" name="email" required
+                    <input control="email" class="email placeholder" #email="" type="email" name="email" required
                         placeholder="Email" />
                 </div>
                 <div>
                     <label class="pw">Password</label>
-                    <input control="password" class="pw" type="password" name="password" placeholder="Password" />
+                    <input control="password" class="pw placeholder" type="password" name="password"
+                        placeholder="Password" />
                 </div>
                 <div>
                     <label class="cpw">Confirm Password</label>
-                    <input control="confirm_password" class="cpw" type="password" name="c-password"
+                    <input control="confirm_password" class="cpw placeholder" type="password" name="c-password"
                         placeholder="Confirm Password" />
                 </div>
                 <div>
                     <label class="phonenum">Phone Number</label>
-                    <input control="phoneNumber" class="phonenum" type="" name="phonenum" placeholder="Phone Number" />
+                    <input control="phoneNumber" class="phonenum placeholder" type="" name="phonenum"
+                        placeholder="Phone Number" />
                 </div>
                 <button class="sub-buttn1 sut-text1" type="submit">
                     Submit

@@ -6,3 +6,23 @@
   line-height: 55px;
   color: #252c4b;
 }
+
+/* .body-container {
+  position: absolute;
+  height: 200px;
+  background-color: white;
+} */
+
+.sample-wrapper {
+  overflow-y: auto;
+  max-height: 380px;
+  margin: 8px;
+}
+
+igx-switch {
+  padding: 16px;
+}
+
+igx-expansion-panel {
+  border: ep-sample-border;
+}

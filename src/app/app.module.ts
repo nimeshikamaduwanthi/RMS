@@ -18,6 +18,7 @@ import { BlogComponent } from './Modules/pages/blog/blog.component';
 import { HomeComponent } from './Modules/pages/home/home.component';
 import { BlogModule } from './Modules/pages/blog/blog.module';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+// import { AppMaterialModule } from './app.material.module';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     BlogModule,
     NgxPageScrollCoreModule.forRoot({ duration: 100 }),
     NgxPageScrollModule,
+    // AppMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
