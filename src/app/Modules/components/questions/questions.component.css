@@ -10,17 +10,33 @@
 
 .question-img1 {
   position: absolute;
-  height: 16.92px;
+  height: 18px;
   left: 45%;
-  top: 40px;
+  right: 25%;
+  top: 30px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fd632f;
 }
 
 .question-img2 {
   position: absolute;
-  width: 494.34px;
-  height: 98.24px;
-  left: 35%;
+  height: 111px;
+  left: 30%;
+  right: 25%;
   top: 70px;
+
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 55px;
+  color: #252c4b;
+  text-align: center;
 }
 
 .question-img3 {

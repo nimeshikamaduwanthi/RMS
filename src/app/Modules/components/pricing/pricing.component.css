@@ -253,6 +253,7 @@ input:checked + .slider:before {
   left: 90px;
   top: 496.53px;
   border: 2px solid #ffffff;
+  background: none;
 }
 
 .pricing-choose-box-color {
