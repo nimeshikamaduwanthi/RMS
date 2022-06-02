@@ -158,3 +158,9 @@ p {
 
   background: #e4e4ee;
 }
+
+.footer {
+  position: absolute;
+  top: 4400px;
+  background-color: #252c4b;
+}

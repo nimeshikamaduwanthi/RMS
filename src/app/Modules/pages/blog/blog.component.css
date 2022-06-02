@@ -205,3 +205,14 @@ h3 {
   border: 1px solid #6fb1fc;
   border-radius: 20px;
 }
+
+.hr-line {
+  position: absolute;
+  height: 1px;
+  left: 0%;
+  right: 0%;
+  max-width: 1440px;
+  top: 2600px;
+
+  background: #e4e4ee;
+}

@@ -1,7 +1,7 @@
 .pricing-container {
   position: absolute;
   width: 1440px;
-  top: 3300px;
+  top: auto;
   left: 0%;
   right: 0%;
   margin: auto;
