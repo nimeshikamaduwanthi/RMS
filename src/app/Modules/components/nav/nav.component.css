@@ -1,67 +1,80 @@
-p {
-  font-family: Lato;
-}
-
-.placeholder {
-  height: 750px;
-  width: 100%;
-  background-color: beige;
-}
-
-#nav {
-  width: 1440px;
-  margin: auto;
-  z-index: 5;
-}
-
-.login {
-  border: none;
-  background: none;
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 36px;
-  color: #737789;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-  list-style-type: none;
-  overflow: hidden;
   position: fixed;
-  width: 100%;
+  z-index: 5;
+  margin: auto;
+  right: 0%;
+  left: 0%;
+  width: 1440px;
   background: #fff;
-  top: 0;
 }
 
-nav {
+#navbar {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#navbar a {
+  color: #737789;
+  text-decoration: none;
+}
+
+#navbar .logo {
+  float: left;
+  padding-top: 30px;
+  padding-left: 15%;
+}
+
+#navbar ul {
+  list-style: none;
   float: right;
 }
 
-.logo img {
+#navbar ul li {
   float: left;
-  height: 100px;
-  top: 40px;
-  margin-left: 100px;
-  border-radius: 0px;
-  padding: 30px;
-}
-
-.li-font {
-  display: inline-block;
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 36px;
-  color: #737789;
-  padding: 30px;
 }
 
-ul li a {
-  text-decoration: none;
+#navbar ul li a {
+  display: block;
+  padding: 25px;
+  text-align: center;
 }
 
-ul li:hover {
-  color: orange;
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  color: #5f60ed;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: auto;
+    color: white;
+  }
+
+  #navbar .logo {
+    float: none;
+    padding-left: 0%;
+    text-align: center;
+  }
+
+  #navbar ul,
+  #navbar ul li {
+    float: none;
+  }
+
+  #navbar ul li a {
+    padding: 5px;
+    border-bottom: rgb(195, 195, 195) dotted 1px;
+  }
 }

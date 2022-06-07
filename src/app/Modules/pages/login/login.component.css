@@ -1,5 +1,9 @@
 #login {
+  position: absolute;
   width: 1440px;
+  margin: auto;
+  right: 0;
+  left: 0;
 }
 
 .close {

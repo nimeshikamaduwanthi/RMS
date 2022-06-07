@@ -164,3 +164,77 @@ p {
   top: 4400px;
   background-color: #252c4b;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 768px;
+    top: 300px;
+  }
+
+  h1.container1 {
+    height: 84px;
+    left: 8%;
+    top: 50px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 84px;
+    color: #252c4b;
+  }
+
+  h1.container2 {
+    height: 84px;
+    left: 8%;
+    top: 90px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 84px;
+    color: #252c4b;
+  }
+
+  h1.container3 {
+    height: 84px;
+    left: 8%;
+    top: 130px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 84px;
+    color: #252c4b;
+  }
+
+  .home-img1 {
+    height: 450px;
+    left: 0%;
+    right: 80%;
+    top: 0px;
+    border-radius: 0px;
+  }
+
+  .img-container img {
+    position: absolute;
+    width: min-content;
+    height: 500px;
+    left: 30%;
+    top: -20px;
+  }
+
+  p {
+    position: absolute;
+    height: 36px;
+    left: 8%;
+    top: 210px;
+    right: 55%;
+
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    color: #737789;
+  }
+}
